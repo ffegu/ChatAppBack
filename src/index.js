@@ -3,15 +3,15 @@ const cors = require("cors")
 const app = express()
 const http = require("http")
 const server = http.createServer(app)
-// const { Server } = require("socket.io")
+const { Server } = require("socket.io")
 const moment = require("moment")
 
 app.use(cors())
-// const io = new Server(server, {
-//     cors: {
-//         origin: "*"
-//     }
-// })
+const io = new Server(server, {
+    cors: {
+        origin: "*"
+    }
+})
 app.use(express.static(__dirname + '/public'))
 app.get("/", (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
