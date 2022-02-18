@@ -1,0 +1,33 @@
+{
+  "name": "chatappback",
+  "version": "1.0.0",
+  "description": "ChatApplication Backend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ffegu/ChatAppBack.git"
+  },
+  "keywords": [
+    "ChatApp"
+  ],
+  "author": "Fran Fegu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffegu/ChatAppBack/issues"
+  },
+  "homepage": "https://github.com/ffegu/ChatAppBack#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.2",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
